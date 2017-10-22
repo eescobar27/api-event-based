@@ -11,7 +11,8 @@
 		+ server close connection with the client (disconnect)
 		+ server shutdown (close all connections)
 
-	Event-Based Communication is useful when the applications need to interact with each other while keeping the connection open. It could also be used when the operations that need to be performed could take a while.
+	Event-Based Communication is useful when the applications need to interact with each other while keeping the connection
+	open. It could also be used when the operations that need to be performed could take a while.
 
 ## Requirements
 
