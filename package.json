@@ -1,0 +1,27 @@
+{
+  "name": "microservice-template",
+  "version": "1.0.0",
+  "description": "template with the basic settings, files and folder structure to build a microservice",
+  "main": "src/server.js",
+  "scripts": {
+	"test": "echo \"Error: no test specified\" && exit 1",
+	"start": "node src/server.js",
+	"start-dev": "node -r dotenv/config src/server.js dotenv_config_path=./vars.env"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eescobar27/microservice-template.git"
+  },
+  "keywords": [
+    "microservice"
+  ],
+  "author": "@eescobar27",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eescobar27/microservice-template/issues"
+  },
+  "homepage": "https://github.com/eescobar27/microservice-template#readme",
+  "devDependencies": {
+    "dotenv": "^4.0.0"
+  }
+}
