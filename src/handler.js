@@ -1,15 +1,16 @@
+const logger = require("./common/logger");
 
 const connection = (socket) => {
-	console.log(`client connected: [${socket.id}]`);
+	logger.info(`client connected: [${socket.id}]`);
 
 	socket.on("disconnect", () => {
-        console.log(`client disconnected: [${socket.id}]`);
+        logger.info(`client disconnected: [${socket.id}]`);
     });
 
 	socket.on("message", (data) => {
-		console.log(data);
-
+		logger.debug(data);
 		socket.emit("message-response", { res: "here are the news" });
+		logger.debug("response emitted");
 	});
 };
 
