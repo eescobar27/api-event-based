@@ -4,9 +4,12 @@
   "description": "basic settings, files and folder structure to build an api with event-based communication",
   "main": "src/server.js",
   "scripts": {
+    "lint": "eslint ./src",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/server.js",
-    "start-dev": "node -r dotenv/config src/server.js dotenv_config_path=./vars.env"
+    "start-dev": "node -r dotenv/config src/server.js dotenv_config_path=./vars.env",
+    "docker-build": "docker build -t api-event-based-communication .",
+    "docker-dev": "docker run --env-file ./vars.env -p 8080:8080 api-event-based-communication"
   },
   "repository": {
     "type": "git",
@@ -23,6 +26,7 @@
   "homepage": "https://github.com/eescobar27/microservice-template#readme",
   "devDependencies": {
     "dotenv": "^4.0.0",
+    "eslint": "^4.12.1",
     "socket.io-client": "^2.0.3"
   },
   "dependencies": {
