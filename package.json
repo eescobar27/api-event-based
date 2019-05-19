@@ -1,7 +1,7 @@
 {
   "name": "api-event-based-communication",
   "version": "1.0.0",
-  "description": "basic settings, files and folder structure to build an api with event-based communication",
+  "description": "api with event-based communication",
   "main": "src/server.js",
   "scripts": {
     "lint": "eslint ./src",
@@ -9,7 +9,7 @@
     "start": "node src/server.js",
     "start-dev": "node -r dotenv/config src/server.js dotenv_config_path=./vars.env",
     "docker-build": "docker build -t api-event-based-communication .",
-    "docker-dev": "docker run --env-file ./vars.env -p 8080:8080 api-event-based-communication"
+    "docker-dev": "docker run --env-file ./vars.env -p 9000:9000 api-event-based-communication"
   },
   "repository": {
     "type": "git",
@@ -25,12 +25,12 @@
   },
   "homepage": "https://github.com/eescobar27/microservice-template#readme",
   "devDependencies": {
-    "dotenv": "^4.0.0",
-    "eslint": "^4.12.1",
-    "socket.io-client": "^2.0.3"
+    "dotenv": "^8.0.0",
+    "eslint": "^5.16.0",
+    "socket.io-client": "^2.2.0"
   },
   "dependencies": {
-    "socket.io": "^2.0.3",
-    "winston": "^2.4.0"
+    "socket.io": "^2.2.0",
+    "winston": "^3.2.1"
   }
 }
