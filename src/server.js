@@ -1,3 +1,5 @@
+"use strict";
+
 const http = require("http");
 const socketIO = require("socket.io");
 const logger = require("./common/logger");
