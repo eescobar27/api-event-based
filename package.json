@@ -26,11 +26,11 @@
   "homepage": "https://github.com/eescobar27/microservice-template#readme",
   "devDependencies": {
     "dotenv": "^10.0.0",
-    "eslint": "^7.29.0",
+    "eslint": "^8.13.0",
     "socket.io-client": "^4.1.2"
   },
   "dependencies": {
-    "socket.io": "^4.1.2",
-    "winston": "^3.3.3"
+    "socket.io": "^4.4.1",
+    "winston": "^3.7.2"
   }
 }
