@@ -10,7 +10,7 @@ const connection = (socket) => {
     });
 
 	socket.on("message", (data) => {
-		logger.debug(data);
+		logger.info(data.req);
 		socket.emit("message-response", { res: "here are the news" });
 		logger.debug("response emitted");
 	});

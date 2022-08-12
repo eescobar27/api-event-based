@@ -15,8 +15,8 @@ the connection open.
 
 ## Requirements
 
-nodeJS v10+
-npm v6+
+nodeJS v16+
+npm v8+
 
 ## Setup
 
